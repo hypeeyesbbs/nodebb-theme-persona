@@ -1,10 +1,10 @@
 {
-  "name": "nodebb-theme-persona",
+  "name": "nodebb-theme-hypeeyes",
   "version": "10.1.30",
   "nbbpm": {
     "compatibility": "^1.13.0"
   },
-  "description": "Persona theme for NodeBB",
+  "description": "Hypeeyes theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",

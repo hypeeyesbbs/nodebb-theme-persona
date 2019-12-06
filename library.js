@@ -6,13 +6,23 @@ var user = require.main.require('./src/user');
 
 var library = {};
 
+function renderHomePage(req, resp) {
+	let prefix = '/hypeeyes/web';
+	if (process.env.NODE_ENV === 'development') {
+		prefix = 'http://127.0.0.1:4200';
+	}
+	const theUrl = prefix + req.url;
+	resp.render('homepage', { theUrl });
+}
+
 library.init = function(params, callback) {
 	var app = params.router;
 	var middleware = params.middleware;
 
 	app.get('/admin/plugins/persona', middleware.admin.buildHeader, renderAdmin);
 	app.get('/api/admin/plugins/persona', renderAdmin);
-
+	app.use('/custom', params.middleware.buildHeader, renderHomePage);
+	app.use('/api/custom', renderHomePage);
 	callback();
 };
 

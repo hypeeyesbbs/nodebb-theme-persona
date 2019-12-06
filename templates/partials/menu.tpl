@@ -1,9 +1,9 @@
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle pull-left" id="mobile-menu">
-					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
+			<div class="navbar-header" style="width: 100%;">
+				<button type="button" class="navbar-toggle show pull-left" id="mobile-menu">
+					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count show" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars"></i>
 				</button>
-				<button type="button" class="navbar-toggle hidden" id="mobile-chats">
+				<button type="button" class="navbar-toggle show" id="mobile-chats">
 					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
 					<i class="fa fa-lg fa-comment-o"></i>
 				</button>
@@ -19,12 +19,12 @@
 				</a>
 				<!-- ENDIF config.showSiteTitle -->
 
-				<div component="navbar/title" class="visible-xs hidden">
+				<div component="navbar/title">
 					<span></span>
 				</div>
 			</div>
 
-			<div id="nav-dropdown" class="hidden-xs">
+			<div id="nav-dropdown" class="hidden">
 				<!-- IF !maintenanceHeader -->
 				<!-- IF config.loggedIn -->
 
@@ -227,7 +227,7 @@
 							<!-- ENDIF navigation.iconClass -->
 
 							<!-- IF navigation.text -->
-							<span class="{navigation.textClass}">{navigation.text}</span>
+							<span>{navigation.text}</span>
 							<!-- ENDIF navigation.text -->
 						</a>
 					</li>
