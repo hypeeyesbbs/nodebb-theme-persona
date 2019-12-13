@@ -5,7 +5,7 @@
 	{{{end}}}
 </div>
 <div class="row">
-	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
+	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-9<!-- ENDIF widgets.sidebar.length -->">
 
 		<h1 component="post/header" class="hidden-xs" itemprop="name">
 
@@ -76,10 +76,26 @@
 			</div>
 		</div>
 	</div>
-	<div data-widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
-		{{{each widgets.sidebar}}}
-		{{widgets.sidebar.html}}
-		{{{end}}}
+<!--	<div data-widget-area="sidebar" class="col-lg-3 col-sm-12 &lt;!&ndash; IF !widgets.sidebar.length &ndash;&gt;hidden&lt;!&ndash; ENDIF !widgets.sidebar.length &ndash;&gt;">-->
+<!--		{{{each widgets.sidebar}}}-->
+<!--		{{widgets.sidebar.html}}-->
+<!--		{{{end}}}-->
+<!--	</div>-->
+	<div class="col-lg-3 col-sm-12">
+<!--		<div class="sidebar-intro" data-widget-area="sidebar" style="background-color: #fff; height: 300px; border-radius: 4px;">-->
+<!--			{{{each posts}}}-->
+<!--				<div style="display: flex; flex: 1 auto; font-size: 17px;">-->
+<!--					<a href="&lt;!&ndash; IF posts.user.userslug &ndash;&gt;{config.relative_path}/user/{posts.user.userslug}&lt;!&ndash; ELSE &ndash;&gt;#&lt;!&ndash; ENDIF posts.user.userslug &ndash;&gt;">-->
+<!--						{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}-->
+<!--						<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>-->
+<!--					</a>-->
+<!--					<strong style="margin-right: 10px;"> {key}-->
+<!--						<a href="">{posts.user.username}</a>-->
+<!--					</strong>-->
+<!--					&lt;!&ndash; IMPORT partials/topic/badge.tpl &ndash;&gt;-->
+<!--				</div>-->
+<!--			{{{end}}}-->
+<!--		</div>-->
 	</div>
 </div>
 
