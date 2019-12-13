@@ -1,4 +1,4 @@
-<div class="clearfix post-header">
+<div class="clearfix post-header" style="display: flex; align-items: center;">
 	<div class="icon pull-left">
 		<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 			{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}
@@ -6,8 +6,8 @@
 		</a>
 	</div>
 
-	<small class="pull-left">
-		<strong>
+	<div style="display: flex;flex: 1 auto; font-size: 17px;">
+		<strong style="margin-right: 10px;">
 			<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
 		</strong>
 
@@ -17,8 +17,10 @@
 		<span class="label label-danger">[[user:banned]]</span>
 		<!-- ENDIF posts.user.banned -->
 
+		<div class="post-header-space" style="flex: 1 auto;"></div>
+
 		<span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
-			<a class="permalink" href="{config.relative_path}/post/{posts.pid}"><span class="timeago" title="{posts.timestampISO}"></span></a>
+			<a class="permalink" href="{config.relative_path}/post/{posts.pid}" style="color: #969696; font-weight: 200; font-size: 15px"><span class="timeago" title="{posts.timestampISO}"></span></a>
 
 			<i component="post/edit-indicator" class="fa fa-pencil-square<!-- IF privileges.posts:history --> pointer<!-- END --> edit-icon <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"></i>
 
@@ -39,7 +41,7 @@
 		</span>
 		<span class="bookmarked"><i class="fa fa-bookmark-o"></i></span>
 
-	</small>
+	</div>
 </div>
 
 <br />
@@ -53,30 +55,62 @@
 	<div component="post/signature" data-uid="{posts.user.uid}" class="post-signature">{posts.user.signature}</div>
 	<!-- ENDIF posts.user.signature -->
 
-	<small class="pull-right">
-		<span class="post-tools">
-			<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
-			<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
-		</span>
+	<div class="post-inline" style="display: flex;">
 
-		<!-- IF !reputation:disabled -->
-		<span class="votes">
+		<div class="upvote-buttom">
 			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
-				<i class="fa fa-chevron-up"></i>
+				<i class="fa fa-thumbs-o-up"></i>
 			</a>
+			<div class="vote-buttom" style="display: inline ">
+				<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+				{posts.reactions}
+			</div>
+		</div>
 
-			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+		<div class="post-space" style="flex: 1 auto;"></div>
+		<div class="post-tools-inline" style="padding: 15px">
+			<span class="post-tools">
+				<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
+				<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
+			</span>
+			<small>
+				<!-- IMPORT partials/topic/post-menu.tpl -->
+			</small>
+		</div>
 
-			<!-- IF !downvote:disabled -->
-			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
-				<i class="fa fa-chevron-down"></i>
+	</div>
+	<div class="post-edit">
+		<span component="post/editor" class="<!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"><strong><a href="{config.relative_path}/user/{posts.editor.userslug}">[[global:last_edited_by, {posts.editor.username}]]</a></strong> <span class="timeago" title="{posts.editedISO}"></span></span>
+		<div class="post-space" style="flex: 1 auto;"></div>
+		<div class="post-share">
+			<div class="fs-13 text-white" href="/aboutus" target="_blank" style="display: inline; margin-right: 12px">分享给朋友</div>
+			<a rel="nofollow" href="https://mp.weixin.qq.com/s/FYOiA6S19dgA-DlQCa9AkQ" target="_blank" style="display:inline-block;margin-right:8px;">
+							<span class="weixin-icon">
+								<img style="width: 18px;height: 18px; color: rgb(102, 102, 102);" src="/assets/uploads/system/wechat.png">
+							</span>
 			</a>
-			<!-- ENDIF !downvote:disabled -->
-		</span>
-		<!-- ENDIF !reputation:disabled -->
-
-		<!-- IMPORT partials/topic/post-menu.tpl -->
-	</small>
+			<!--						<a rel="nofollow" href="https://www.weibo.com/u/6813829027?is_all=1" target="_blank" style="display:inline-block;margin-right:8px;">-->
+			<!--							<span class="nowre-third-icon small">-->
+			<!--								<img style="width: 18px;height: 18px; color: rgb(102, 102, 102);" src="/assets/uploads/system/sina-weibo.png">-->
+			<!--							</span>-->
+			<!--						</a>-->
+			<a rel="nofollow" href="https://www.instagram.com/hypeeyes_official/" target="_blank" style="display:inline-block;margin-right:8px;">
+					  		<span class="nowre-third-icon small">
+								<img style="width: 18px;height: 18px; color: rgb(102, 102, 102);" src="/assets/uploads/system/instagram-logo.png">
+					  		</span>
+			</a>
+			<!--						<a role="menuitem" component="share/facebook" tabindex="-1" href="#" style="display:inline-block;margin-right:8px;">-->
+			<!--							<span class="small">-->
+			<!--								<img style="width: 18px;height: 18px; color: rgb(102, 102, 102);" src="/assets/uploads/system/facebook.png">-->
+			<!--						  	</span>-->
+			<!--						</a>-->
+			<a role="menuitem" component="share/twitter" tabindex="-1" href="#" style="display:inline-block;margin-right:8px;">
+				  			<span class="small">
+								<img style="width: 18px;height: 18px; color: rgb(102, 102, 102);" src="/assets/uploads/system/twitter.png">
+						  	</span>
+			</a>
+		</div>
+	</div>
 
 	<!-- IF !hideReplies -->
 	<a component="post/reply-count" href="#" class="threaded-replies no-select <!-- IF !posts.replies.count -->hidden<!-- ENDIF !posts.replies.count -->">
