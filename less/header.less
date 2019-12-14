@@ -407,7 +407,7 @@ label.dropdown-toggle {
 
 .navbar-default {
 
-	color: #fff;
+	color: @navbar-default-link-color;
 
 	.navbar-nav {
 		> li > label {
@@ -493,5 +493,63 @@ html[data-dir="rtl"] {
 	100% {
 		-webkit-transform: rotate(359deg);
 		transform: rotate(359deg);
+	}
+}
+
+ul li.dropdown:hover > ul.dropdown-menu {
+	display: block;
+}
+
+.header-inner {
+	&>li {
+		&.dropdown {
+			&>a {
+				i {
+					transition: all .2s ease;
+				}
+				&:hover {
+					i {
+						transform: rotate(-180deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+.nav-title {
+	>a {
+		color: #9C9C9C !important;
+	}
+	display: inline;
+	margin-right: 20px !important;
+	font-size: 16px;
+	font-weight: bolder;
+
+	&.open {
+		ul {
+			display: none;
+		}
+	}
+	&:hover {
+		ul {
+			display: block;
+		}
+	}
+}
+
+#new_topic {
+	background-color: #FF5000;
+	margin-right: 1rem;
+}
+
+@media (max-width: 576px) {
+	.nav-title {
+		margin-right: 0.3rem !important;
+		font-size: 12px;
+	}
+
+	.logo, .alert, #search-form, .notifications, .chats, #user_label, .fa-chevron-down {
+		display: none !important;
 	}
 }

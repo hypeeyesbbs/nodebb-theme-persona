@@ -659,12 +659,48 @@
 }
 
 .sidebar-intro {
-	&>div {
-		display: none!important;
+	padding: 20px;
+	background-color: #fff;
+	min-height: 300px;
+	//border-radius: 4px;
 
-		&:first-child {
-			display: block!important;
+	.post-author-title {
+		font-size: 14px;
+		color: #666666;
+		margin-bottom: 15px;
+	}
+
+	.user-msg {
+		font-size: 17px;
+		color: #999999;
+
+		.user-msg-1 {
+			width: 70px;
+			height: 70px;
+			overflow: hidden;
+			margin-right: 10px;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
 		}
 	}
+
+	.attention {
+		display: flex;
+		margin-top: 35px;
+
+		.img-btn {
+			background-color: #ffad03;
+			color: rgb(71, 71, 71);
+			font-weight: bold;
+			border-radius: 15px;
+			padding: 6px 25px;
+			transform: translateX(-50%);
+			margin: 20px;
+			margin-left: 0;
+			box-shadow: 0 0 20px #ffc80c;
+		}
+	}
+
+
 }
 

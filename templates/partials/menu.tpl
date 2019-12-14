@@ -1,12 +1,12 @@
-			<div class="navbar-header" style="width: 100%;">
+			<div class="navbar-header" style="flex: 1 auto;">
 				<button type="button" class="navbar-toggle show pull-left" id="mobile-menu">
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count show" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars"></i>
 				</button>
-				<button type="button" class="navbar-toggle show" id="mobile-chats">
-					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
-					<i class="fa fa-lg fa-comment-o"></i>
-				</button>
+<!--				<button type="button" class="navbar-toggle show" id="mobile-chats">-->
+<!--					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>-->
+<!--					<i class="fa fa-lg fa-comment-o"></i>-->
+<!--				</button>-->
 
 				<!-- IF brand:logo -->
 				<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
@@ -22,9 +22,109 @@
 				<div component="navbar/title">
 					<span></span>
 				</div>
+
+				<div class="header-inner" style="padding: 15px;float: left">
+					<li class="nav-title"><a href="/custom" style="color: #FF5000!important">潮目首页</a></li>
+
+					<li id="news-category" class="nav-title dropdown" data-animation>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
+							发售资讯
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+						<ul id="news-list" class="dropdown-menu pull-left">
+							<li>
+								<a href="/category/17/">Nike</a>
+							</li>
+							<li>
+								<a href="/category/18/">Adidas</a>
+							</li>
+							<li>
+								<a href="/category/19/">Supreme</a>
+							</li>
+							<li>
+								<a href="/category/20/">Kith</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="wiki-category" class="nav-title dropdown" data-animation>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/4" id="wiki_dropdown">
+							潮流百科
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+						<ul id="wiki-list" class="dropdown-menu pull-left">
+							<li>
+								<a href="/category/21/">人物</a>
+							</li>
+							<li>
+								<a href="/category/22/">品牌</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="picture-category" class="nav-title dropdown" data-animation>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/8" id="picture_dropdown">
+							美图细赏
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+						<ul id="picture-list" class="dropdown-menu pull-left">
+							<li>
+								<a href="/category/23/">球鞋</a>
+							</li>
+							<li>
+								<a href="/category/24/">潮服</a>
+							</li>
+							<li>
+								<a href="/category/25/">上身驾驭</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="forum-category" class="nav-title dropdown" data-animation>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/ugc/12" id="forum_dropdown">
+							潮目社区
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+						<ul id="forum-list" class="dropdown-menu pull-left">
+							<li>
+								<a href="/category/31/">发售讨论</a>
+							</li>
+							<li>
+								<a href="/category/32/">抢购技巧</a>
+							</li>
+							<li>
+								<a href="/custom/category/33/">晒图区</a>
+							</li>
+							<li>
+								<a href="/category/34/">七嘴八舌</a>
+							</li>
+						</ul>
+					</li>
+
+					<!--	  <li id="trade-category" class="dropdown" data-animation>-->
+					<!--		  <a class="dropdown-toggle" data-toggle="dropdown" href="/category/9" id="trade_dropdown">-->
+					<!--			  交易区-->
+					<!--			  <i class="fa fa-chevron-down" aria-hidden="true"></i>-->
+					<!--		  </a>-->
+					<!--		  <ul id="trade-list" class="dropdown-menu pull-left">-->
+					<!--			  <li>-->
+					<!--				  <a href="/category/26/">新品发售</a>-->
+					<!--			  </li>-->
+					<!--			  <li>-->
+					<!--				  <a href="/category/27/">二手交易</a>-->
+					<!--			  </li>-->
+					<!--			  <li>-->
+					<!--				  <a href="/category/28/">平台寄卖</a>-->
+					<!--			  </li>-->
+					<!--			  <li>-->
+					<!--				  <a href="/category/29/">地区转运</a>-->
+					<!--			  </li>-->
+					<!--		  </ul>-->
+					<!--	  </li>-->
+				</div>
 			</div>
 
-			<div id="nav-dropdown" class="hidden">
+			<div id="nav-dropdown" class="hidden-xs">
 				<!-- IF !maintenanceHeader -->
 				<!-- IF config.loggedIn -->
 
@@ -48,21 +148,27 @@
 
 					<!-- IF !config.disableChat -->
 					<li class="chats dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
-							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
+						<a type="button" class="navbar-toggle show" id="mobile-chats">
+							<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
+							<i class="fa fa-fw fa-comment-o"></i>
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
-							<li>
-								<ul component="chat/list" class="chat-list chats-list">
-									<li class="loading-text">
-										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
-									</li>
-								</ul>
-							</li>
-							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>
-							<li class="notif-dropdown-link"><a href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></li>
-						</ul>
 					</li>
+<!--					<li class="chats dropdown">-->
+<!--						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">-->
+<!--							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>-->
+<!--						</a>-->
+<!--						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">-->
+<!--							<li>-->
+<!--								<ul component="chat/list" class="chat-list chats-list">-->
+<!--									<li class="loading-text">-->
+<!--										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>-->
+<!--									</li>-->
+<!--								</ul>-->
+<!--							</li>-->
+<!--							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>-->
+<!--							<li class="notif-dropdown-link"><a href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></li>-->
+<!--						</ul>-->
+<!--					</li>-->
 					<!-- ENDIF !config.disableChat -->
 
 					<li id="user_label" class="dropdown">
@@ -217,7 +323,7 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav">
+				<ul id="main-nav" class="nav navbar-nav hidden">
 					{{{each navigation}}}
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">

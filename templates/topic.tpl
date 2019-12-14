@@ -82,20 +82,42 @@
 <!--		{{{end}}}-->
 <!--	</div>-->
 	<div class="col-lg-3 col-sm-12">
-<!--		<div class="sidebar-intro" data-widget-area="sidebar" style="background-color: #fff; height: 300px; border-radius: 4px;">-->
-<!--			{{{each posts}}}-->
-<!--				<div style="display: flex; flex: 1 auto; font-size: 17px;">-->
-<!--					<a href="&lt;!&ndash; IF posts.user.userslug &ndash;&gt;{config.relative_path}/user/{posts.user.userslug}&lt;!&ndash; ELSE &ndash;&gt;#&lt;!&ndash; ENDIF posts.user.userslug &ndash;&gt;">-->
-<!--						{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}-->
-<!--						<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>-->
-<!--					</a>-->
-<!--					<strong style="margin-right: 10px;"> {key}-->
-<!--						<a href="">{posts.user.username}</a>-->
-<!--					</strong>-->
-<!--					&lt;!&ndash; IMPORT partials/topic/badge.tpl &ndash;&gt;-->
-<!--				</div>-->
-<!--			{{{end}}}-->
-<!--		</div>-->
+		<div class="sidebar-intro" data-widget-area="sidebar">
+
+			{{{each posts}}}
+			<!-- IF @first -->
+				<div class="post-author-title">本文作者</div>
+				<div class="hot-crowd-list">
+					<div class="user-msg">
+						<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" class="user-msg-1">
+							{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}
+						</a>
+						<span class="user-msg-2">
+							<strong style="margin-right: 10px;"> {key}
+								<a href="">{posts.user.username}</a>
+							</strong>
+						</span>
+					</div>
+					<div class="attention">
+						<div class="attention-1">
+							<div class="icon-follow">
+								<a target="_blank" id="follow_user" class="img-btn">
+									关注
+								</a>
+							</div>
+						</div>
+						<div class="attention-2">
+							<div class="icon-chat">
+								<a target="_blank" id="chat_user" class="img-btn">
+									聊天
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- ENDIF @first -->
+			{{{end}}}
+		</div>
 	</div>
 </div>
 

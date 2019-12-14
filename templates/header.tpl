@@ -33,9 +33,9 @@
 
 	<main id="panel" class="slideout-panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-			<div class="container" style="width: 100%;">
+			<div class="container" style="width: 100%; display: flex">
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div class="container" id="content">
+		<div class="container" id="content" style="min-height: 67vh; display: flex">
 		<!-- IMPORT partials/noscript/warning.tpl -->
