@@ -279,6 +279,12 @@
 		text-align: right;
 	}
 
+	@media (max-width: 576px) {
+		.post-edit {
+			display: none !important;
+		}
+	}
+
 	.post-tools {
 		a {
 			color: #3f3f3f;
@@ -661,7 +667,7 @@
 .sidebar-intro {
 	padding: 20px;
 	background-color: #fff;
-	min-height: 300px;
+	min-height: 100px;
 	//border-radius: 4px;
 
 	.post-author-title {
@@ -700,7 +706,19 @@
 			box-shadow: 0 0 20px #ffc80c;
 		}
 	}
+}
 
+.sidebar-intro-hypeeyes {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #fff;
+	min-height: 300px;
 
+	.subscribe-hypeeyes-title {
+		font-size: 14px;
+		color: #666666;
+		margin-bottom: 15px;
+		text-align: center;
+	}
 }
 

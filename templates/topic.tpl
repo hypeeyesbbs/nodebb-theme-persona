@@ -65,16 +65,16 @@
 			<strong class="text"></strong><br/>
 			<span class="time"></span>
 		</div>
-		<div class="visible-xs visible-sm pagination-block text-center">
-			<div class="progress-bar"></div>
-			<div class="wrapper">
-				<i class="fa fa-2x fa-angle-double-up pointer fa-fw pagetop"></i>
-				<i class="fa fa-2x fa-angle-up pointer fa-fw pageup"></i>
-				<span class="pagination-text"></span>
-				<i class="fa fa-2x fa-angle-down pointer fa-fw pagedown"></i>
-				<i class="fa fa-2x fa-angle-double-down pointer fa-fw pagebottom"></i>
-			</div>
-		</div>
+<!--		<div class="visible-xs visible-sm pagination-block text-center">-->
+<!--			<div class="progress-bar"></div>-->
+<!--			<div class="wrapper">-->
+<!--				<i class="fa fa-2x fa-angle-double-up pointer fa-fw pagetop"></i>-->
+<!--				<i class="fa fa-2x fa-angle-up pointer fa-fw pageup"></i>-->
+<!--				<span class="pagination-text"></span>-->
+<!--				<i class="fa fa-2x fa-angle-down pointer fa-fw pagedown"></i>-->
+<!--				<i class="fa fa-2x fa-angle-double-down pointer fa-fw pagebottom"></i>-->
+<!--			</div>-->
+<!--		</div>-->
 	</div>
 <!--	<div data-widget-area="sidebar" class="col-lg-3 col-sm-12 &lt;!&ndash; IF !widgets.sidebar.length &ndash;&gt;hidden&lt;!&ndash; ENDIF !widgets.sidebar.length &ndash;&gt;">-->
 <!--		{{{each widgets.sidebar}}}-->
@@ -82,11 +82,11 @@
 <!--		{{{end}}}-->
 <!--	</div>-->
 	<div class="col-lg-3 col-sm-12">
-		<div class="sidebar-intro hidden" data-widget-area="sidebar">
+		<div class="sidebar-intro" data-widget-area="sidebar">
 
 			{{{each posts}}}
 			<!-- IF @first -->
-				<div class="post-author-title">本文作者</div>
+				<div class="post-author-title">关于作者</div>
 				<div class="hot-crowd-list">
 					<div class="user-msg">
 						<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" class="user-msg-1">
@@ -98,25 +98,34 @@
 							</strong>
 						</span>
 					</div>
-					<div class="attention">
-						<div class="attention-1">
-							<div class="icon-follow">
-								<a target="_blank" id="follow_user" class="img-btn">
-									关注
-								</a>
-							</div>
-						</div>
-						<div class="attention-2">
-							<div class="icon-chat">
-								<a target="_blank" id="chat_user" class="img-btn">
-									聊天
-								</a>
-							</div>
-						</div>
-					</div>
+<!--					<div class="attention">-->
+<!--						<div class="attention-1">-->
+<!--							<div class="icon-follow">-->
+<!--								<a target="_blank" id="follow_user" class="img-btn">-->
+<!--									关注-->
+<!--								</a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="attention-2">-->
+<!--							<div class="icon-chat">-->
+<!--								<a target="_blank" id="chat_user" class="img-btn">-->
+<!--									聊天-->
+<!--								</a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
 				</div>
 			<!-- ENDIF @first -->
 			{{{end}}}
+		</div>
+	</div>
+
+	<div class="col-lg-3 col-sm-12">
+		<div class="sidebar-intro-hypeeyes" data-widget-area="sidebar">
+			<div class="subscribe-hypeeyes-title">关注潮目公众号</div>
+			<div class="img-wrap" style="text-align: center;">
+				<img style="max-width: 100%" src="/assets/uploads/system/qrcode_for_gh.jpg" alt="扫码">
+			</div>
 		</div>
 	</div>
 </div>

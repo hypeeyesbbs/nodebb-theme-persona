@@ -9,7 +9,7 @@
 <!--				</button>-->
 
 				<!-- IF brand:logo -->
-				<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
+				<a class="logo" href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
 					<img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}?{config.cache-buster}" />
 				</a>
 				<!-- ENDIF brand:logo -->
@@ -171,7 +171,7 @@
 <!--					</li>-->
 					<!-- ENDIF !config.disableChat -->
 
-					<li id="user_label" class="dropdown">
+					<li id="user_label" class="dropdown" style="padding-right: 30px;">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
 							{buildAvatar(user, "md", true)}
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
@@ -268,6 +268,11 @@
 				<!-- ENDIF config.loggedIn -->
 				<!-- IF config.searchEnabled -->
 				<ul class="nav navbar-nav navbar-right">
+					<!-- IF config.loggedIn -->
+					<li>
+						<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+					</li>
+					<!-- ENDIF config.loggedIn -->
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
 							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
