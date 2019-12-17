@@ -23,15 +23,15 @@
 					<span></span>
 				</div>
 
-				<div class="header-inner" style="padding: 15px;float: left">
-					<li class="nav-title"><a href="/custom" style="color: #FF5000!important">潮目首页</a></li>
+				<div class="header-inner" style="padding: 14px;float: left;">
+					<li class="nav-title"><a href="/custom" style="color: #FF5000!important;">潮目首页</a></li>
 
 					<li id="news-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
 							发售资讯
 							<i class="fa fa-chevron-down" aria-hidden="true"></i>
 						</a>
-						<ul id="news-list" class="dropdown-menu pull-left">
+						<ul id="news-list" class="dropdown-menu pull-left" style="top: 17px;">
 							<li>
 								<a href="/category/17/">Nike</a>
 							</li>
@@ -52,7 +52,7 @@
 							潮流百科
 							<i class="fa fa-chevron-down" aria-hidden="true"></i>
 						</a>
-						<ul id="wiki-list" class="dropdown-menu pull-left">
+						<ul id="wiki-list" class="dropdown-menu pull-left" style="top: 17px;">
 							<li>
 								<a href="/category/21/">人物</a>
 							</li>
@@ -67,7 +67,7 @@
 							美图细赏
 							<i class="fa fa-chevron-down" aria-hidden="true"></i>
 						</a>
-						<ul id="picture-list" class="dropdown-menu pull-left">
+						<ul id="picture-list" class="dropdown-menu pull-left" style="top: 17px;">
 							<li>
 								<a href="/category/23/">球鞋</a>
 							</li>
@@ -85,7 +85,7 @@
 							潮目社区
 							<i class="fa fa-chevron-down" aria-hidden="true"></i>
 						</a>
-						<ul id="forum-list" class="dropdown-menu pull-left">
+						<ul id="forum-list" class="dropdown-menu pull-left" style="top: 17px;">
 							<li>
 								<a href="/category/31/">发售讨论</a>
 							</li>
@@ -131,7 +131,7 @@
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
 					<li class="notifications dropdown text-center hidden-xs" component="notifications">
 						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
-							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></i>
+							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}" style="font-weight: 800"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
@@ -148,9 +148,9 @@
 
 					<!-- IF !config.disableChat -->
 					<li class="chats dropdown">
-						<a type="button" class="navbar-toggle show" id="mobile-chats">
+						<a href="#" class="navbar-toggle show" id="mobile-chats">
 							<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
-							<i class="fa fa-fw fa-comment-o"></i>
+							<i class="fa fa-fw fa-comment-o" style="font-weight: 800"></i>
 						</a>
 					</li>
 <!--					<li class="chats dropdown">-->

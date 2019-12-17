@@ -82,7 +82,7 @@
 <!--		{{{end}}}-->
 <!--	</div>-->
 	<div class="col-lg-3 col-sm-12">
-		<div class="sidebar-intro" data-widget-area="sidebar">
+		<div class="sidebar-intro hidden" data-widget-area="sidebar">
 
 			{{{each posts}}}
 			<!-- IF @first -->
