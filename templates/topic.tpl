@@ -76,28 +76,39 @@
 <!--			</div>-->
 <!--		</div>-->
 	</div>
-<!--	<div data-widget-area="sidebar" class="col-lg-3 col-sm-12 &lt;!&ndash; IF !widgets.sidebar.length &ndash;&gt;hidden&lt;!&ndash; ENDIF !widgets.sidebar.length &ndash;&gt;">-->
-<!--		{{{each widgets.sidebar}}}-->
-<!--		{{widgets.sidebar.html}}-->
-<!--		{{{end}}}-->
-<!--	</div>-->
-	<div class="col-lg-3 col-sm-12">
-		<div class="sidebar-intro" data-widget-area="sidebar">
 
-			{{{each posts}}}
-			<!-- IF @first -->
-				<div class="post-author-title">关于作者</div>
-				<div class="hot-crowd-list">
-					<div class="user-msg">
-						<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" class="user-msg-1">
-							{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}
-						</a>
-						<span class="user-msg-2">
-							<strong style="margin-right: 10px;"> {key}
-								<a href="">{posts.user.username}</a>
-							</strong>
-						</span>
-					</div>
+	<div class="sidebar col-lg-3">
+		<div class="sidebar-intro-hypeeyes" data-widget-area="sidebar">
+			<div class="subscribe-hypeeyes-title">关注潮目公众号</div>
+			<div class="img-wrap" style="text-align: center;">
+				<img style="max-width: 100%" src="/assets/uploads/system/qrcode_for_gh.jpg" alt="扫码">
+			</div>
+		</div>
+	</div>
+
+	<div class="sidebar col-lg-3" style="position: sticky; top: 55px">
+		<div class="sidebar-intro" data-widget-area="sidebar">
+			<div class="post-author-title">热门帖子</div>
+			<div class="system-sidebar" data-widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
+				{{{each widgets.sidebar}}}
+				{{widgets.sidebar.html}}
+				{{{end}}}
+			</div>
+
+<!--			{{{each posts}}}-->
+<!--			&lt;!&ndash; IF @first &ndash;&gt;-->
+<!--				<div class="post-author-title">关于作者</div>-->
+<!--				<div class="hot-crowd-list">-->
+<!--					<div class="user-msg">-->
+<!--						<a href="&lt;!&ndash; IF posts.user.userslug &ndash;&gt;{config.relative_path}/user/{posts.user.userslug}&lt;!&ndash; ELSE &ndash;&gt;#&lt;!&ndash; ENDIF posts.user.userslug &ndash;&gt;" class="user-msg-1">-->
+<!--							{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}-->
+<!--						</a>-->
+<!--						<span class="user-msg-2">-->
+<!--							<strong style="margin-right: 10px;"> {key}-->
+<!--								<a href="">{posts.user.username}</a>-->
+<!--							</strong>-->
+<!--						</span>-->
+<!--					</div>-->
 <!--					<div class="attention">-->
 <!--						<div class="attention-1">-->
 <!--							<div class="icon-follow">-->
@@ -114,26 +125,18 @@
 <!--							</div>-->
 <!--						</div>-->
 <!--					</div>-->
-				</div>
-			<!-- ENDIF @first -->
+<!--				</div>-->
+<!--			&lt;!&ndash; ENDIF @first &ndash;&gt;-->
+<!--			{{{end}}}-->
+		</div>
+	</div>
+	<div class="suggestion col-lg-9 col-sm-12">
+		<div class="popular-topics" data-widget-area="footer">
+			{{{each widgets.footer}}}
+			{{widgets.footer.html}}
 			{{{end}}}
 		</div>
 	</div>
-
-	<div class="col-lg-3 col-sm-12">
-		<div class="sidebar-intro-hypeeyes" data-widget-area="sidebar">
-			<div class="subscribe-hypeeyes-title">关注潮目公众号</div>
-			<div class="img-wrap" style="text-align: center;">
-				<img style="max-width: 100%" src="/assets/uploads/system/qrcode_for_gh.jpg" alt="扫码">
-			</div>
-		</div>
-	</div>
-</div>
-
-<div data-widget-area="footer">
-	{{{each widgets.footer}}}
-	{{widgets.footer.html}}
-	{{{end}}}
 </div>
 
 <!-- IF !config.usePagination -->

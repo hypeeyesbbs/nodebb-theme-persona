@@ -100,6 +100,9 @@
 							</li>
 						</ul>
 					</li>
+					<!-- IF config.loggedIn -->
+					<button id="new_topic_mobile" >[[category:new_topic_button]]</button>
+					<!-- ENDIF config.loggedIn -->
 
 					<!--	  <li id="trade-category" class="dropdown" data-animation>-->
 					<!--		  <a class="dropdown-toggle" data-toggle="dropdown" href="/category/9" id="trade_dropdown">-->

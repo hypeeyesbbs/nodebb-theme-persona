@@ -548,6 +548,11 @@ html[data-dir="rtl"] {
 #new_topic {
 	background-color: #FF5000;
 	margin: 4px;
+    border-radius: 10px;
+}
+
+#new_topic_mobile {
+	display: none;
 }
 
 @media (max-width: 576px) {
@@ -555,7 +560,18 @@ html[data-dir="rtl"] {
 		margin-right: 0.3rem !important;
 		font-size: 12px;
 	}
+}
 
+@media (max-width: 768px) {
+	#new_topic_mobile {
+		display: inline-block;
+		background-color: #FF5000;
+		border-radius: 10px;
+	}
+}
+
+
+@media (max-width: 1200px) {
 	.logo, .alert, #search-form, .notifications, .chats, #user_label, .fa-chevron-down {
 		display: none !important;
 	}
