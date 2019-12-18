@@ -80,7 +80,7 @@
 
 	</div>
 	<div class="post-edit">
-		<span component="post/editor" class="<!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"><strong><a href="{config.relative_path}/user/{posts.editor.userslug}">[[global:last_edited_by, {posts.editor.username}]]</a></strong> <span class="timeago" title="{posts.editedISO}"></span></span>
+<!--		<span component="post/editor" class="&lt;!&ndash; IF !posts.editor.username &ndash;&gt;hidden&lt;!&ndash; ENDIF !posts.editor.username &ndash;&gt;"><strong><a href="{config.relative_path}/user/{posts.editor.userslug}">[[global:last_edited_by, {posts.editor.username}]]</a></strong> <span class="timeago" title="{posts.editedISO}"></span></span>-->
 		<div class="post-space" style="flex: 1 auto;"></div>
 		<div class="post-share">
 			<div class="fs-13 text-white" href="/aboutus" target="_blank" style="display: inline; margin-right: 12px">分享给朋友</div>
