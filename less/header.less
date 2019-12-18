@@ -548,11 +548,9 @@ html[data-dir="rtl"] {
 #new_topic {
 	background-color: #FF5000;
 	margin: 4px;
+	color: white;
+	padding: 7px;
     border-radius: 10px;
-}
-
-#new_topic_mobile {
-	display: none;
 }
 
 @media (max-width: 576px) {
@@ -575,4 +573,14 @@ html[data-dir="rtl"] {
 	.logo, .alert, #search-form, .notifications, .chats, #user_label, .fa-chevron-down {
 		display: none !important;
 	}
+
+	#new_topic {
+		color: #FF5000;
+		padding: 0;
+		background-color: transparent;
+		margin: 0;
+		border-radius: 0;
+	}
 }
+
+

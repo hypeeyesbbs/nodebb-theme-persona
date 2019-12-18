@@ -24,7 +24,7 @@
 				</div>
 
 				<div class="header-inner" style="padding: 14px;float: left;">
-					<li class="nav-title"><a href="/custom" style="color: #FF5000!important;">潮目首页</a></li>
+					<li class="nav-title" id="homepage"><a href="/custom" style="color: #FF5000!important;">首页</a></li>
 
 					<li id="news-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
@@ -100,8 +100,11 @@
 							</li>
 						</ul>
 					</li>
+
 					<!-- IF config.loggedIn -->
-					<button id="new_topic_mobile" >[[category:new_topic_button]]</button>
+					<li class="nav-title">
+						<a href="#" id="new_topic">新帖</a>
+					</li>
 					<!-- ENDIF config.loggedIn -->
 
 					<!--	  <li id="trade-category" class="dropdown" data-animation>-->
@@ -271,11 +274,6 @@
 				<!-- ENDIF config.loggedIn -->
 				<!-- IF config.searchEnabled -->
 				<ul class="nav navbar-nav navbar-right">
-					<!-- IF config.loggedIn -->
-					<li>
-						<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
-					</li>
-					<!-- ENDIF config.loggedIn -->
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
 							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
