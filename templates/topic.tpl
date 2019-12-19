@@ -10,7 +10,6 @@
 		<h1 class="post-header-title" component="post/header" class="hidden-xs" itemprop="name">
 			<span class="pull-left topic-title <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="[[topic:pinned]]">🔥</span>
 			<span class="pull-left topic-title <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]">🔒</span>
-			<span class="pull-left topic-title <!-- IF !oldCid -->hidden<!-- ENDIF !oldCid -->" title="[[topic:moved]]">✖️</span>
 			{{{each icons}}}@value{{{end}}}
 			<span class="topic-title" component="topic/title">{title}</span>
 		</h1>
@@ -39,9 +38,11 @@
 					<meta itemprop="datePublished" content="{posts.timestampISO}">
 					<meta itemprop="dateModified" content="{posts.editedISO}">
 
-					<!-- IMPORT partials/topic/post.tpl -->
 					<!-- IF !posts.index -->
+					<!-- IMPORT partials/topic/post.tpl -->
 					<div class="post-bar-placeholder"></div>
+					<!-- ELSE -->
+					<!-- IMPORT partials/topic/post-reply.tpl -->
 					<!-- ENDIF !posts.index -->
 				</li>
 			{{{end}}}

@@ -17,6 +17,16 @@
 		<span class="label label-danger">[[user:banned]]</span>
 		<!-- ENDIF posts.user.banned -->
 
+		<div class="upvote-buttom">
+			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
+				<i class="fa fa-thumbs-o-up"></i>
+			</a>
+			<div class="vote-buttom" style="display: inline ">
+				<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+				{posts.reactions}
+			</div>
+		</div>
+
 		<div class="post-header-space" style="flex: 1 auto;"></div>
 
 		<span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
@@ -50,48 +60,19 @@
 	{posts.content}
 </div>
 
-<div class="clearfix post-footer">
+<div class="clearfix post-reply-footer">
 	<!-- IF posts.user.signature -->
 	<div component="post/signature" data-uid="{posts.user.uid}" class="post-signature">{posts.user.signature}</div>
 	<!-- ENDIF posts.user.signature -->
 
-	<div class="post-inline" style="display: flex;">
-		<a component="post/upvote" href="#" class="button button-toggle button-grey <!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->" style="padding: 0 16px;">
-			点赞 |
-			<div class="vote-count">
-				<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
-			</div>
-		</a>
-
-<!--		<div class="upvote-buttom">-->
-<!--			<a component="post/upvote" href="#" class="&lt;!&ndash; IF posts.upvoted &ndash;&gt;upvoted&lt;!&ndash; ENDIF posts.upvoted &ndash;&gt;">-->
-<!--				<i class="fa fa-thumbs-o-up"></i>-->
-<!--			</a>-->
-<!--			<div class="vote-buttom" style="display: inline ">-->
-<!--				<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>-->
-<!--				{posts.reactions}-->
-<!--			</div>-->
-<!--		</div>-->
-
-		<div class="post-space" style="flex: 1 auto;"></div>
-
-		<div class="post-edit">
-			<!--		<span component="post/editor" class="&lt;!&ndash; IF !posts.editor.username &ndash;&gt;hidden&lt;!&ndash; ENDIF !posts.editor.username &ndash;&gt;"><strong><a href="{config.relative_path}/user/{posts.editor.userslug}">[[global:last_edited_by, {posts.editor.username}]]</a></strong> <span class="timeago" title="{posts.editedISO}"></span></span>-->
-			<div class="post-share">
-				<!--			<div class="fs-13 text-white" style="display: inline; margin-right: 12px">分享给朋友</div>-->
-				<button class="button button-grey button-circle button-wechat">
-					<a href="https://mp.weixin.qq.com/s/FYOiA6S19dgA-DlQCa9AkQ" target="_blank" class="fa fa-wechat"></a>
-				</button>
-				<button class="button button-grey button-circle button-instagram">
-					<a href="https://www.instagram.com/hypeeyes_official/" target="_blank" class="fa fa-instagram"></a>
-				</button>
-				<button class="button button-grey button-circle button-twitter">
-					<a role="menuitem" component="share/twitter" tabindex="-1" href="#" class="fa fa-twitter"></a>
-				</button>
-
-				<!-- IMPORT partials/topic/post-menu.tpl -->
-			</div>
-		</div>
+	<div class="post-tools-inline pull-right" style="padding: 15px">
+		<span class="post-tools">
+			<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
+			<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
+		</span>
+		<small>
+			<!-- IMPORT partials/topic/post-menu.tpl -->
+		</small>
 	</div>
 
 	<!-- IF !hideReplies -->
