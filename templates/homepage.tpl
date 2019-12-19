@@ -23,7 +23,7 @@ body #content {
     padding: 0;
 }
 body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     height: calc(100vh - 65px);
     background: #edf1f4;
 }

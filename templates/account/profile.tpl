@@ -67,10 +67,10 @@
 			<span>[[user:lastonline]]</span>
 			<strong class="timeago" title="{lastonlineISO}"></strong><br />
 
-			<!-- IF email -->
-			<span>[[user:email]]</span>
-			<strong><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</strong>
-			<!-- ENDIF email -->
+<!--			&lt;!&ndash; IF email &ndash;&gt;-->
+<!--			<span>[[user:email]]</span>-->
+<!--			<strong><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</strong>-->
+<!--			&lt;!&ndash; ENDIF email &ndash;&gt;-->
 
 			<!-- IF websiteName -->
 			<span>[[user:website]]</span>
@@ -90,7 +90,7 @@
 	</div>
 
 
-	<hr />
+	<hr style="border-top: 1px solid #FF5000;"/>
 
 	<div class="row">
 		<div class="col-xs-12 account-block hidden">
