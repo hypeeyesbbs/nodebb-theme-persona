@@ -92,40 +92,6 @@
 				{{widgets.sidebar.html}}
 				{{{end}}}
 			</div>
-
-<!--			{{{each posts}}}-->
-<!--			&lt;!&ndash; IF @first &ndash;&gt;-->
-<!--				<div class="post-author-title">关于作者</div>-->
-<!--				<div class="hot-crowd-list">-->
-<!--					<div class="user-msg">-->
-<!--						<a href="&lt;!&ndash; IF posts.user.userslug &ndash;&gt;{config.relative_path}/user/{posts.user.userslug}&lt;!&ndash; ELSE &ndash;&gt;#&lt;!&ndash; ENDIF posts.user.userslug &ndash;&gt;" class="user-msg-1">-->
-<!--							{buildAvatar(posts.user, "sm2x", true, "", "user/picture")}-->
-<!--						</a>-->
-<!--						<span class="user-msg-2">-->
-<!--							<strong style="margin-right: 10px;"> {key}-->
-<!--								<a href="">{posts.user.username}</a>-->
-<!--							</strong>-->
-<!--						</span>-->
-<!--					</div>-->
-<!--					<div class="attention">-->
-<!--						<div class="attention-1">-->
-<!--							<div class="icon-follow">-->
-<!--								<a target="_blank" id="follow_user" class="img-btn">-->
-<!--									关注-->
-<!--								</a>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="attention-2">-->
-<!--							<div class="icon-chat">-->
-<!--								<a target="_blank" id="chat_user" class="img-btn">-->
-<!--									聊天-->
-<!--								</a>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			&lt;!&ndash; ENDIF @first &ndash;&gt;-->
-<!--			{{{end}}}-->
 		</div>
 	</div>
 	<div class="suggestion col-lg-9 col-sm-12">

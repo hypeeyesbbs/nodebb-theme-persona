@@ -254,6 +254,7 @@
 
 	.upvote-buttom {
 		padding: 15px;
+		padding-top: 20px;
 		text-align: left;
 
 		i {
@@ -262,22 +263,75 @@
 		}
 	}
 
-	.post-share {
-		//padding-right: 20px;
-	}
-
 	.vote-buttom {
 		padding: 10px;
 		font-weight: normal;
 	}
 
-	.post-edit {
-		//padding-left: 20px;
+	.post-inline {
 		a {
 			color: #969696;
+			text-decoration: none;
 		}
+
 		display: flex;
 		text-align: right;
+		padding-top: 20px;
+		padding-bottom: 10px;
+
+		.button {
+			margin-left: 0;
+			margin-right: 5px;
+			border: 1px solid rgba(0,0,0,.15);
+			border-radius: 999em;
+			box-sizing: border-box;
+			cursor: pointer;
+			display: inline-block;
+			font-feature-settings: "liga";
+			font-size: 14px;
+			height: 37px;
+			line-height: 36px;
+			letter-spacing: 0;
+			white-space: nowrap;
+		}
+		.button-grey {
+			border-color: #a3b4c1;
+			color: #a3b4c1;
+			fill: #a3b4c1;
+		}
+		.button-grey:hover {
+			border-color: #FF5000;
+			color: #FF5000;
+			fill: #FF5000;
+		}
+		.button-circle {
+			padding: 0;
+			width: 37px;
+			text-align: center;
+		}
+		.button-wechat:hover {
+			background-color: #06ba13 !important;
+			border-color: #06ba13 !important;
+			.fa-wechat {
+				color: white!important;
+			}
+		}
+		.button-instagram:hover {
+			background-color: #fb3958 !important;
+			border-color: #fb3958 !important;
+
+			.fa-instagram {
+				color: white !important;
+			}
+		}
+		.button-twitter:hover {
+			background-color: #1DA1F2 !important;
+			border-color: #1DA1F2 !important;
+
+			.fa-twitter {
+				color: white !important;
+			}
+		}
 	}
 
 	@media (max-width: 576px) {
@@ -671,44 +725,6 @@
 	min-height: 100px;
 	text-align: center;
 	//border-radius: 4px;
-
-	.post-author-title {
-		font-size: 16px;
-		font-weight: bolder;
-		color: #666666;
-		margin-bottom: 15px;
-	}
-
-	.user-msg {
-		font-size: 17px;
-		color: #999999;
-
-		.user-msg-1 {
-			width: 70px;
-			height: 70px;
-			overflow: hidden;
-			margin-right: 10px;
-			border-radius: 50%;
-			-webkit-border-radius: 50%;
-		}
-	}
-
-	.attention {
-		display: flex;
-		margin-top: 35px;
-
-		.img-btn {
-			background-color: #ffad03;
-			color: rgb(71, 71, 71);
-			font-weight: bold;
-			border-radius: 15px;
-			padding: 6px 25px;
-			transform: translateX(-50%);
-			margin: 20px;
-			margin-left: 0;
-			box-shadow: 0 0 20px #ffc80c;
-		}
-	}
 }
 
 .sidebar-intro-hypeeyes {
