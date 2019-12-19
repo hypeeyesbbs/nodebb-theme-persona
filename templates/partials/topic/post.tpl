@@ -56,9 +56,9 @@
 	<!-- ENDIF posts.user.signature -->
 
 	<div class="post-inline" style="display: flex;">
-		<button component="post/upvote" href="#" class="button button-toggle button-grey" style="padding: 0 16px;">
-			点赞 | {posts.votes}
-		</button>
+		<a component="post/upvote" href="#" class="button button-toggle button-grey" style="padding: 0 16px;">
+			点赞 | <span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+		</a>
 
 <!--		<div class="upvote-buttom">-->
 <!--			<a component="post/upvote" href="#" class="&lt;!&ndash; IF posts.upvoted &ndash;&gt;upvoted&lt;!&ndash; ENDIF posts.upvoted &ndash;&gt;">-->
