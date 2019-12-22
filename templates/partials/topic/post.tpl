@@ -20,11 +20,11 @@
 		<div class="post-header-space" style="flex: 1 auto;"></div>
 
 		<span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
-			<a class="permalink" href="{config.relative_path}/post/{posts.pid}" style="color: #969696; font-weight: 200; font-size: 15px"><span class="timeago" title="{posts.timestampISO}"></span></a>
+			<a class="permalink" style="color: #969696; font-weight: 200; font-size: 15px"><span class="timeago" title="{posts.timestampISO}"></span></a>
 
-			<i component="post/edit-indicator" class="fa fa-pencil-square<!-- IF privileges.posts:history --> pointer<!-- END --> edit-icon <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"></i>
+<!--			<i component="post/edit-indicator" class="fa fa-pencil-square&lt;!&ndash; IF privileges.posts:history &ndash;&gt; pointer&lt;!&ndash; END &ndash;&gt; edit-icon &lt;!&ndash; IF !posts.editor.username &ndash;&gt;hidden&lt;!&ndash; ENDIF !posts.editor.username &ndash;&gt;"></i>-->
 
-			<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.editedISO}"></span></small>
+<!--			<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.editedISO}"></span></small>-->
 
 			<!-- IF posts.toPid -->
 			<a component="post/parent" class="btn btn-xs btn-default hidden-xs" data-topid="{posts.toPid}" href="{config.relative_path}/post/{posts.toPid}"><i class="fa fa-reply"></i> @<!-- IF posts.parent.username -->{posts.parent.username}<!-- ELSE -->[[global:guest]]<!-- ENDIF posts.parent.username --></a>
