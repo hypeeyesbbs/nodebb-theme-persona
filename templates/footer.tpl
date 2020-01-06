@@ -10,7 +10,7 @@
 							<a href="/custom">潮目首页</a>
 						</li>
 						<li>
-							<a href="/custom/categories/1/">发售资讯</a>
+							<a href="/custom/categories/1/">潮目秘籍</a>
 						</li>
 						<li>
 							<a href="/custom/categories/4">潮流百科</a>

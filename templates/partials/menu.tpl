@@ -28,21 +28,18 @@
 
 					<li id="news-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
-							发售资讯
+							潮目秘籍
 							<i class="fa fa-chevron-down" aria-hidden="true"></i>
 						</a>
 						<ul id="news-list" class="dropdown-menu pull-left" style="top: 17px;">
 							<li>
-								<a href="/category/17/">Nike</a>
+								<a href="/category/17/">线上抢购</a>
 							</li>
 							<li>
-								<a href="/category/18/">Adidas</a>
+								<a href="/category/18/">线下购买</a>
 							</li>
 							<li>
-								<a href="/category/19/">Supreme</a>
-							</li>
-							<li>
-								<a href="/category/20/">Kith</a>
+								<a href="/category/19/">鉴定教学</a>
 							</li>
 						</ul>
 					</li>
