@@ -1,6 +1,6 @@
 <div style="width: 100%;">
     <iframe id="external-frame" src="{theUrl}"
-            style="width: 100%;min-height: 200vh; overflow:hidden; border: 0;"
+            style="width: 100%;min-height: 200vh; overflow:hidden; border: 0; margin-top: -20px"
         ></iframe>
 </div>
 <script type="text/javascript">
