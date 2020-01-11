@@ -150,6 +150,7 @@
 		max-height: 30px;
 		width: auto;
 		margin: 10px;
+		margin-right: 5px;
 	}
 
 	@media (max-width: @screen-xs-max) {
@@ -409,10 +410,10 @@ label.dropdown-toggle {
 
 	a {
 		text-decoration: none;
-		color: #9C9C9C;
+		color: #FFFFFF;
 		&:hover {
 			text-decoration: none;
-			color: #FF5000!important;
+			color: #F8BD2C !important;
 		}
 	}
 
@@ -505,7 +506,7 @@ html[data-dir="rtl"] {
 	}
 }
 
-.header-inner {
+//.header-inner {
 
 	ul li.dropdown:hover > ul.dropdown-menu {
 		display: block;
@@ -525,11 +526,10 @@ html[data-dir="rtl"] {
 			}
 		}
 	}
-}
+//}
 
 .nav-title {
 	display: inline;
-	margin-right: 20px !important;
 	font-size: 16px;
 	font-weight: bolder;
 
@@ -538,15 +538,16 @@ html[data-dir="rtl"] {
 			display: none;
 		}
 	}
-	&:hover {
-		ul {
-			display: block;
-		}
-	}
+	//&:hover {
+	//	ul {
+	//		display: block;
+	//	}
+	//	border-bottom: #F8BD2C solid;
+	//}
 }
 
 #new_topic {
-	background-color: #FF5000;
+	background-color: #F8BD2C;
 	margin: 4px;
 	color: white;
 	padding: 7px;
@@ -563,7 +564,7 @@ html[data-dir="rtl"] {
 @media (max-width: 768px) {
 	#new_topic_mobile {
 		display: inline-block;
-		background-color: #FF5000;
+		background-color: #F8BD2C;
 		border-radius: 10px;
 	}
 }
@@ -575,7 +576,7 @@ html[data-dir="rtl"] {
 	}
 
 	#new_topic {
-		color: #FF5000;
+		color: #F8BD2C;
 		padding: 0;
 		background-color: transparent;
 		margin: 0;

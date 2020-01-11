@@ -4,58 +4,62 @@
 		<footer class="footer">
 			<div class="footer-firstline">
 				<div class="footer-left text-left" style="color: rgb(102, 102, 102); display: flex">
-					<img class="footer-logo" src="https://pbs.twimg.com/media/DywoAz7W0AA6mkP.jpg:large">
-					<div class="footer-pgc-list">
+					<img class="footer-logo" src="/assets/uploads/system/bbs-logo.png" alt="Logo">
+					<div class="footer-info-list">
 						<li>
-							<a href="/custom">潮目首页</a>
+							<a href="/custom" style="font-weight: bolder; font-size: 18px">关于我们</a>
 						</li>
 						<li>
-							<a href="/custom/categories/1/">潮目秘籍</a>
+							<a href="/custom">关于潮目</a>
 						</li>
 						<li>
-							<a href="/custom/categories/4">潮流百科</a>
+							<a href="/custom">联系我们</a>
 						</li>
 						<li>
-							<a href="/custom/categories/8">美图细赏</a>
+							<a href="/custom">加入我们</a>
 						</li>
 					</div>
 					<div class="footer-ugc-list">
 						<li>
-							<a href="/category/12">潮目社区</a>
+							<a href="/aboutus" target="_blank" style="font-weight: bolder; font-size: 18px">关注我们</a>
 						</li>
-					</div>
-				</div>
-				<div class="footer-space"></div>
-				<div class="footer-right" style="color: rgb(102, 102, 102);">
-					<a class="fs-13 text-white" style="margin-right:15px;position:relative;color:#666666;" href="/aboutus" target="_blank">关于我们</a>
-					<!-- <a class="fs-13 text-white"
-					style="margin-right:15px;position:relative;top:-2px;" href="http://nowre.com/Contact"  target="_blank">联系我们</a> -->
-					<div class="share-icons">
-						<a rel="nofollow" href="https://mp.weixin.qq.com/s/FYOiA6S19dgA-DlQCa9AkQ" target="_blank" style="display:inline-block;margin-right:8px;">
+						<div class="share-icons">
+							<a rel="nofollow" href="https://mp.weixin.qq.com/s/FYOiA6S19dgA-DlQCa9AkQ" target="_blank" style="display:inline-block;margin-right:8px;">
 							<span class="weixin-icon">
 								<img style="width: 25px;height: 25px;" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/371_Wechat_logo-512.png">
 							</span>
-						</a>
-						<!--						<a rel="nofollow" href="https://www.weibo.com/u/6813829027?is_all=1" target="_blank" style="display:inline-block;margin-right:8px;">-->
-						<!--								<span class="nowre-third-icon small">-->
-						<!--									<img style="width: 25px;height: 25px;" src="https://cdn4.iconfinder.com/data/icons/chinas-social-share-icons/256/cssi_sina_weibo-512.png">-->
-						<!--								</span>-->
+							</a>
+							<!--						<a rel="nofollow" href="https://www.weibo.com/u/6813829027?is_all=1" target="_blank" style="display:inline-block;margin-right:8px;">-->
+							<!--								<span class="nowre-third-icon small">-->
+							<!--									<img style="width: 25px;height: 25px;" src="https://cdn4.iconfinder.com/data/icons/chinas-social-share-icons/256/cssi_sina_weibo-512.png">-->
+							<!--								</span>-->
 
-						<!--						</a>-->
-						<a rel="nofollow" href="https://www.instagram.com/hypeeyes_official/" target="_blank" style="display:inline-block;margin-right:8px;">
+							<!--						</a>-->
+							<a rel="nofollow" href="https://www.instagram.com/hypeeyes_official/" target="_blank" style="display:inline-block;margin-right:8px;">
 							  <span class="nowre-third-icon small">
 								<img style="width: 25px;height: 25px;" src="http://www.transparentpng.com/thumb/instagram-logo-icon/85T6Z9-instagram-logo-clipart-transparent.png">
 							  </span>
-						</a>
+							</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="footer-space"></div>
+				<div class="footer-right-text">
+					<div class="text-info">更多潮流资讯</div>
+					<div class="text-info">关注我们</div>
+					<div class="text-info">微信公众号</div>
+				</div>
+				<div class="footer-right" style="color: rgb(102, 102, 102);">
+					<div class="img-wrap" style="text-align: center;">
+						<img style="width: 150px; height: 150px" src="/assets/uploads/system/qrcode_for_gh.jpg" alt="扫码">
 					</div>
 				</div>
 			</div>
-			<!--			<div class="footer-button text-center" style="color: rgb(102, 102, 102);">-->
-			<!--				© HYPEEYES.COM 2019 &nbsp; | &nbsp;-->
-			<!--				<a class="fs-13 text-white" style="position:relative; color: rgb(102, 102, 102);" href="http://www.miitbeian.gov.cn" target="_blank">-->
-			<!--					沪ICP备1234567-->
-			<!--				</a> &nbsp; | &nbsp;	广播电视节目制作经营许可证（泸）字第9999号-->
-			<!--			</div>-->
+			<hr class="line-copy-8"></footer>
+			<div class="footer-button text-center" style="color: rgb(102, 102, 102);padding: 20px">
+				© 2020 北京潮物纪网络科技有限公司
+			</div>
 		</footer>
 
 	<!-- IF !isSpider -->
@@ -103,7 +107,7 @@
 			bottom: 20px;
 			right: 20px;
 			font-size: 40px;
-			color: #FF5000;
+			color: black;
 		}
 		.position-fix:hover {
 			cursor: pointer;
@@ -118,7 +122,6 @@
 			padding-left: 40px;
 			padding-right: 40px;
 			font-size: 14px !important;
-			background-color: rgb(53, 53, 53);
 		}
 		.footer-left {
 			padding: 20px;
@@ -131,6 +134,16 @@
 			margin-right: 200px;
 			position: relative;
 			top: -7px;
+		}
+		.footer-right-text {
+			padding-top: 45px;
+		}
+		.text-info {
+			font-size: 18px;
+			text-align: right;
+			font-weight: bolder;
+			color: #222222;
+			margin: 5px;
 		}
 		.footer-button {
 			position: relative;
@@ -147,24 +160,33 @@
 			width: 40px;
 			height: 40px;
 		}
-		.footer-pgc-list {
+		.footer-info-list {
+			text-decoration: none;
 			margin-right: 50px;
 		}
 		.footer-ugc-list {
 			margin-right: 50px;
 		}
-		.footer-pgc-list li{
+		.footer-info-list li{
 			margin-bottom: 20px;
 		}
-		.footer-pgc-list li a{
-			color: #666666;
+		.footer-info-list li a{
+			color: black;
 		}
 		.footer-ugc-list li a{
-			color: #666666;
+			color: black;
 		}
 		.share-icons {
 			margin-top: 20px;
 		}
+		li {
+			list-style-type: none;
+		}
+		.line-copy-8 {
+			box-sizing: border-box;
+			width: 1219px;
+			border: 0.5px solid #222222;
+			opacity: 0.2;}
 	</style>
 
 </body>

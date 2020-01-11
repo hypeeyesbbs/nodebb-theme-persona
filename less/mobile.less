@@ -6,6 +6,9 @@
 
 /* iPhone 5 and other such devices */
 @media (max-width: @screen-sm-max) {
+	.navbar-toggle {
+		padding: 10px 10px!important;
+	}
 	.chat-modal {
 		width: 100%;
 		height: 100%;
@@ -43,7 +46,6 @@
 		background-color: inherit;
 		min-height: 100%;
 		padding-top: 80px;
-		padding-bottom: 40px;
 	}
 
 	body, #panel, .slideout-menu {
@@ -68,6 +70,17 @@
 			&.unread-count::after {
 				position: static;
 			}
+		}
+	}
+
+	.navbar-title-toggle {
+		padding: 10px 17px;
+		margin: 0;
+		line-height: 30px;
+		border: none;
+
+		html[data-dir="rtl"] button& {
+			margin-left: 0;
 		}
 	}
 

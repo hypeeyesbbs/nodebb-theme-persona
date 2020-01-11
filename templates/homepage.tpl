@@ -25,6 +25,6 @@ body #content {
 body {
     /*overflow-x: hidden;*/
     height: calc(100vh - 65px);
-    background: #edf1f4;
+    background: #f9f9f9;
 }
 </style>

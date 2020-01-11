@@ -8,10 +8,11 @@
 	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-9<!-- ENDIF widgets.sidebar.length -->">
 
 		<h1 class="post-header-title" component="post/header" class="hidden-xs" itemprop="name">
-			<span class="pull-left topic-title <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="[[topic:pinned]]">🔥</span>
-			<span class="pull-left topic-title <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]">🔒</span>
-			{{{each icons}}}@value{{{end}}}
-			<span class="topic-title" component="topic/title">{title}</span>
+			<span class="topic-title" component="topic/title">
+				<i class="topic-title <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]" style="font-style: normal">🔒</i>
+				<i class="topic-title <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="[[topic:pinned]]" style="font-style: normal">🔥</i>
+				{title}
+			</span>
 		</h1>
 
 		<!-- IF merger -->

@@ -90,7 +90,7 @@
 	</div>
 
 
-	<hr style="border-top: 1px solid #FF5000;"/>
+	<hr style="border-top: 1px solid #F8BD2C;"/>
 
 	<div class="row">
 		<div class="col-xs-12 account-block hidden">

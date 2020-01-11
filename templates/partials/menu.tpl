@@ -1,8 +1,4 @@
 			<div class="navbar-header" style="flex: 1 auto;">
-				<button type="button" class="navbar-toggle show pull-left" id="mobile-menu">
-					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count show" data-content="{unreadCount.notification}"></span>
-					<i class="fa fa-lg fa-fw fa-bars"></i>
-				</button>
 <!--				<button type="button" class="navbar-toggle show" id="mobile-chats">-->
 <!--					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>-->
 <!--					<i class="fa fa-lg fa-comment-o"></i>-->
@@ -19,84 +15,99 @@
 				</a>
 				<!-- ENDIF config.showSiteTitle -->
 
+				<button type="button" class="navbar-toggle show pull-left" id="mobile-menu">
+					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count show" data-content="{unreadCount.notification}"></span>
+					<i class="fa fa-lg fa-fw fa-bars" style="font-size: 12px; color: #9C9C9C"></i>
+				</button>
+
 				<div component="navbar/title">
 					<span></span>
 				</div>
 
-				<div class="header-inner" style="padding: 14px;float: left;">
-					<li class="nav-title" id="homepage"><a href="/custom" style="color: #FF5000!important;">首页</a></li>
+<!--				<div class="header-inner" style="padding: 14px;float: left;">-->
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+					<li class="nav-title" id="homepage"><a href="/custom">首页</a></li>
+				</button>
 
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
 					<li id="news-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
 							潮目秘籍
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+<!--							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>-->
 						</a>
-						<ul id="news-list" class="dropdown-menu pull-left" style="top: 17px;">
-							<li>
-								<a href="/category/17/">线上抢购</a>
-							</li>
-							<li>
-								<a href="/category/18/">线下购买</a>
-							</li>
-							<li>
-								<a href="/category/19/">鉴定教学</a>
-							</li>
-						</ul>
+<!--						<ul id="news-list" class="dropdown-menu pull-left" style="top: 32px;">-->
+<!--							<li>-->
+<!--								<a href="/category/17/">线上抢购</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/18/">线下购买</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/19/">鉴定教学</a>-->
+<!--							</li>-->
+<!--						</ul>-->
 					</li>
+				</button>
 
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
 					<li id="wiki-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/4" id="wiki_dropdown">
 							潮流百科
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+<!--							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>-->
 						</a>
-						<ul id="wiki-list" class="dropdown-menu pull-left" style="top: 17px;">
-							<li>
-								<a href="/category/21/">人物</a>
-							</li>
-							<li>
-								<a href="/category/22/">品牌</a>
-							</li>
-						</ul>
+<!--						<ul id="wiki-list" class="dropdown-menu pull-left" style="top: 32px;">-->
+<!--							<li>-->
+<!--								<a href="/category/21/">人物</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/22/">品牌</a>-->
+<!--							</li>-->
+<!--						</ul>-->
 					</li>
+				</button>
 
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
 					<li id="picture-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/8" id="picture_dropdown">
 							美图细赏
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+<!--							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>-->
 						</a>
-						<ul id="picture-list" class="dropdown-menu pull-left" style="top: 17px;">
-							<li>
-								<a href="/category/23/">球鞋</a>
-							</li>
-							<li>
-								<a href="/category/24/">潮服</a>
-							</li>
-							<li>
-								<a href="/category/25/">上身驾驭</a>
-							</li>
-						</ul>
+<!--						<ul id="picture-list" class="dropdown-menu pull-left" style="top: 32px;">-->
+<!--							<li>-->
+<!--								<a href="/category/23/">球鞋</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/24/">潮服</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/25/">上身驾驭</a>-->
+<!--							</li>-->
+<!--						</ul>-->
 					</li>
+				</button>
 
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
 					<li id="forum-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/ugc/12" id="forum_dropdown">
 							潮目社区
-							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+<!--							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>-->
 						</a>
-						<ul id="forum-list" class="dropdown-menu pull-left" style="top: 17px;">
-							<li>
-								<a href="/category/31/">发售讨论</a>
-							</li>
-							<li>
-								<a href="/category/32/">抢购技巧</a>
-							</li>
-							<li>
-								<a href="/custom/category/33/">晒图区</a>
-							</li>
-							<li>
-								<a href="/category/34/">七嘴八舌</a>
-							</li>
-						</ul>
+<!--						<ul id="forum-list" class="dropdown-menu pull-left" style="top: 32px;">-->
+<!--							<li>-->
+<!--								<a href="/category/31/">发售讨论</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/32/">抢购技巧</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/custom/category/33/">晒图区</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--								<a href="/category/34/">七嘴八舌</a>-->
+<!--							</li>-->
+<!--						</ul>-->
 					</li>
+				</button>
 
 					<!-- IF config.loggedIn -->
 					<li class="nav-title">
@@ -125,7 +136,7 @@
 					<!--		  </ul>-->
 					<!--	  </li>-->
 				</div>
-			</div>
+<!--			</div>-->
 
 			<div id="nav-dropdown" class="hidden-xs">
 				<!-- IF !maintenanceHeader -->
