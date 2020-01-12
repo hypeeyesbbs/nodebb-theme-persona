@@ -110,9 +110,11 @@
 				</button>
 
 					<!-- IF config.loggedIn -->
-					<li class="nav-title">
-						<a href="#" id="new_topic">新帖</a>
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+					<li class="nav-title"">
+						<a href="#" id="new_topic">发帖</a>
 					</li>
+				</button>
 					<!-- ENDIF config.loggedIn -->
 
 					<!--	  <li id="trade-category" class="dropdown" data-animation>-->
