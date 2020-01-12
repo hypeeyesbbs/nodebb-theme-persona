@@ -25,11 +25,13 @@
 				</div>
 
 <!--				<div class="header-inner" style="padding: 14px;float: left;">-->
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid"
+						onclick="window.location.href = '/custom';">
 					<li class="nav-title" id="homepage"><a href="/custom">首页</a></li>
 				</button>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid"
+						onclick="window.location.href = '/custom/categories/1';">
 					<li id="news-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
 							潮目秘籍
@@ -49,7 +51,8 @@
 					</li>
 				</button>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid"
+						onclick="window.location.href = '/custom/categories/4';">
 					<li id="wiki-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/4" id="wiki_dropdown">
 							潮流百科
@@ -66,7 +69,8 @@
 					</li>
 				</button>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid"
+						onclick="window.location.href = '/custom/categories/8';">
 					<li id="picture-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/8" id="picture_dropdown">
 							美图细赏
@@ -86,7 +90,8 @@
 					</li>
 				</button>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
+				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid"
+						onclick="window.location.href = '/custom/ugc/12';">
 					<li id="forum-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/ugc/12" id="forum_dropdown">
 							潮目社区
@@ -111,7 +116,7 @@
 
 					<!-- IF config.loggedIn -->
 				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent; border-bottom: 2px transparent solid">
-					<li class="nav-title"">
+					<li class="nav-title">
 						<a href="#" id="new_topic">发帖</a>
 					</li>
 				</button>
