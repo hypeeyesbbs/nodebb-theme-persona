@@ -529,7 +529,7 @@ html[data-dir="rtl"] {
 //}
 
 .nav-title {
-	display: inline;
+	position: initial;
 	font-size: 16px;
 	font-weight: bolder;
 
@@ -538,12 +538,19 @@ html[data-dir="rtl"] {
 			display: none;
 		}
 	}
-	//&:hover {
-	//	ul {
-	//		display: block;
-	//	}
-	//	border-bottom: #F8BD2C solid;
-	//}
+
+	&>a{
+		position: relative;
+		&:after {
+			position: absolute;
+			//content: '';
+			width: 80%;
+			left: 10%;
+			height: 4px;
+			background-color: orange;
+			bottom: -17px;
+		}
+	}
 }
 
 #new_topic {

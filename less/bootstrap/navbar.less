@@ -449,10 +449,20 @@
   }
 
   .navbar-title-toggle {
+    position: relative;
     &:hover,
     &:focus {
       background-color: transparent;
-      border-bottom: 2px #F8BD2C solid!important;
+      .nav-title {
+        &>a {
+          &:after {
+            content: '';
+          }
+        }
+      }
+      ul {
+      		display: block;
+      	}
     }
   }
 
