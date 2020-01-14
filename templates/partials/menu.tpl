@@ -16,7 +16,8 @@
 				<!-- ENDIF config.showSiteTitle -->
 
 				<button type="button" class="navbar-toggle show pull-left" id="mobile-menu">
-					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count show" data-content="{unreadCount.notification}"></span>
+					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count show"
+						  data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars" style="font-size: 12px; color: #9C9C9C"></i>
 				</button>
 
@@ -30,8 +31,7 @@
 					<li class="nav-title" id="homepage"><a href="/custom">首页</a></li>
 				</button>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;"
-						onclick="window.location.href = '/custom/categories/1';">
+				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="news-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
 							潮目秘籍
@@ -49,10 +49,9 @@
 							</li>
 						</ul>
 					</li>
-				</button>
+				</div>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;"
-						onclick="window.location.href = '/custom/categories/4';">
+				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="wiki-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/4" id="wiki_dropdown">
 							潮流百科
@@ -67,31 +66,29 @@
 							</li>
 						</ul>
 					</li>
-				</button>
+				</div>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;"
-						onclick="window.location.href = '/custom/categories/8';">
+				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="picture-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/8" id="picture_dropdown">
 							美图细赏
 							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>
 						</a>
-						<ul id="picture-list" class="dropdown-menu pull-left" style="top:49px;width: 100%;text-align:center;">
-							<li>
-								<a href="/category/23/">球鞋</a>
-							</li>
-							<li>
-								<a href="/category/24/">潮服</a>
-							</li>
-							<li>
-								<a href="/category/25/">上身驾驭</a>
-							</li>
-						</ul>
 					</li>
-				</button>
+					<ul id="picture-list" class="dropdown-menu pull-left" style="top:49px;width: 100%;text-align:center;">
+						<li>
+							<a href="/category/23/">球鞋</a>
+						</li>
+						<li>
+							<a href="/category/24/">潮服</a>
+						</li>
+						<li>
+							<a href="/category/25/">上身驾驭</a>
+						</li>
+					</ul>
+				</div>
 
-				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;"
-						onclick="window.location.href = '/custom/ugc/12';">
+				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="forum-category" class="nav-title dropdown" data-animation>
 						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/ugc/12" id="forum_dropdown">
 							潮目社区
@@ -112,7 +109,7 @@
 							</li>
 						</ul>
 					</li>
-				</button>
+				</div>
 
 					<!-- IF config.loggedIn -->
 				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;">
