@@ -58,7 +58,7 @@
 					</div>
 				</div>
 			</div>
-			<hr class="line-copy-8"></footer>
+			<hr class="line-copy-8">
 			<div class="footer-button text-center" style="color: rgb(102, 102, 102);padding: 20px">
 				© 2020 北京潮物纪网络科技有限公司
 			</div>
