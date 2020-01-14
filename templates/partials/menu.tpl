@@ -191,7 +191,7 @@
 
 					<li id="user_label" class="dropdown" style="padding-right: 30px;">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
-							{buildAvatar(user, "md", true)}
+							{buildAvatar(user, "30", true)}
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
 						</label>
 						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
