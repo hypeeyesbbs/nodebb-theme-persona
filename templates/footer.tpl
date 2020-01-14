@@ -45,10 +45,12 @@
 					</div>
 				</div>
 				<div class="footer-space"></div>
-				<div class="footer-right-text">
-					<div class="text-info">更多潮流资讯</div>
-					<div class="text-info">关注我们</div>
-					<div class="text-info">微信公众号</div>
+				<div class="footer-orange-shadow">
+					<div class="footer-right-text">
+						<div class="text-info">更多潮流资讯</div>
+						<div class="text-info">关注我们</div>
+						<div class="text-info">微信公众号</div>
+					</div>
 				</div>
 				<div class="footer-right" style="color: rgb(102, 102, 102);">
 					<div class="img-wrap" style="text-align: center;">
@@ -186,7 +188,26 @@
 			box-sizing: border-box;
 			width: 1219px;
 			border: 0.5px solid #222222;
-			opacity: 0.2;}
+			opacity: 0.2;
+		}
+		.footer-orange-shadow .footer-right-text {
+			display: block;
+			font-weight: bolder;
+			padding: 0 20px;
+			position: relative;
+			overflow: hidden;
+		}
+		.footer-orange-shadow .footer-right-text:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			background-color: #F8BD2C;
+			height: 55%;
+			width: 70%;
+			z-index: -1;
+			left: 14%;
+			top: 23%;
+		}
 	</style>
 
 </body>

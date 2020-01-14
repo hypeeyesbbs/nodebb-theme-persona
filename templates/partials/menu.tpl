@@ -25,7 +25,6 @@
 					<span></span>
 				</div>
 
-<!--				<div class="header-inner" style="padding: 14px;float: left;">-->
 				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;"
 						onclick="window.location.href = '/custom';">
 					<li class="nav-title" id="homepage"><a href="/custom">首页</a></li>
@@ -140,7 +139,6 @@
 					<!--		  </ul>-->
 					<!--	  </li>-->
 				</div>
-<!--			</div>-->
 
 			<div id="nav-dropdown" class="hidden-xs">
 				<!-- IF !maintenanceHeader -->
