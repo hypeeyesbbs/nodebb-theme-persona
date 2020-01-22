@@ -101,9 +101,20 @@
 	<!-- IMPORT 500-embed.tpl -->
 	</div>
 
+	<div id="newTopic" style="display: none;">
+		<img id="new_topic" href="#" class="fa topic-position-fix" style="width: 37px; height: 37px"
+			 src="https://images.squarespace-cdn.com/content/v1/5b05c8c74eddec9f709ec844/1559637223777-LD0PVL14ERJ14KG6634B/ke17ZwdGBToddI8pDm48kGfiFqkITS6axXxhYYUCnlRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxQ1ibo-zdhORxWnJtmNCajDe36aQmu-4Z4SFOss0oowgxUaachD66r8Ra2gwuBSqM/paper-pencil_icon-icons.com_52928.png" alt="">
+	</div>
 	<div><i id="scroll" style="display: none;" class="fa fa-chevron-circle-up position-fix"></i></div>
 
 	<style type="text/css">
+		.topic-position-fix {
+			position: fixed;
+			bottom: 60px;
+			right: 20px;
+			font-size: 40px;
+			color: #F8BD2C;
+		}
 		.position-fix {
 			position: fixed;
 			bottom: 20px;
@@ -112,6 +123,9 @@
 			color: black;
 		}
 		.position-fix:hover {
+			cursor: pointer;
+		}
+		.topic-position-fix:hover {
 			cursor: pointer;
 		}
 		@media only screen and (max-width: 576px) {

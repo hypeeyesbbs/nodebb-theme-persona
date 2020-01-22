@@ -101,7 +101,7 @@
 								<a href="/category/32/">抢购技巧</a>
 							</li>
 							<li>
-								<a href="/custom/category/33/">晒图区</a>
+								<a href="/category/33/">晒图区</a>
 							</li>
 							<li>
 								<a href="/category/34/">七嘴八舌</a>
