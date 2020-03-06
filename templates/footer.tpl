@@ -59,8 +59,12 @@
 				</div>
 			</div>
 			<hr class="line-copy-8">
-			<div class="footer-button text-center" style="color: rgb(102, 102, 102);padding: 20px">
+			<div class="footer-button text-center" style="color: rgb(102, 102, 102); padding: 20px">
 				© 2020 北京潮物纪网络科技有限公司
+				<span class="se" style="color: #ccc; padding: 0 6px;">/</span>
+				<a class="" href="http://www.beian.miit.gov.cn/" target="_blank">
+					京ICP备18059580号
+				</a>
 			</div>
 		</footer>
 
