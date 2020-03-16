@@ -27,12 +27,15 @@
 
 				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;"
 						onclick="window.location.href = '/custom';">
-					<li class="nav-title" id="homepage"><a href="/custom">首页</a></li>
+					<li class="nav-title" id="homepage">
+						<a href="/custom" style="font-weight: 500; font-size: 15px; color: #a9a9a9;">首页</a>
+					</li>
 				</button>
 
 				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="news-category" class="nav-title dropdown" data-animation>
-						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/1" id="news_dropdown"
+						   style="font-weight: 500; font-size: 15px; color: #a9a9a9;">
 							潮目秘籍
 							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>
 						</a>
@@ -52,7 +55,8 @@
 
 				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="wiki-category" class="nav-title dropdown" data-animation>
-						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/4" id="wiki_dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/4" id="wiki_dropdown"
+						   style="font-weight: 500; font-size: 15px; color: #a9a9a9;">
 							潮流百科
 							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>
 						</a>
@@ -69,7 +73,8 @@
 
 				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="picture-category" class="nav-title dropdown" data-animation>
-						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/8" id="picture_dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/categories/8" id="picture_dropdown"
+						   style="font-weight: 500; font-size: 15px; color: #a9a9a9;">
 							美图细赏
 							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>
 						</a>
@@ -89,7 +94,8 @@
 
 				<div class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li id="forum-category" class="nav-title dropdown" data-animation>
-						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/ugc/12" id="forum_dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="/custom/ugc/12" id="forum_dropdown"
+						   style="font-weight: 500; font-size: 15px; color: #a9a9a9;">
 							潮目社区
 							<i class="fa fa-angle-down" aria-hidden="true" style="color: #9C9C9C; size: 14px; font-weight: bolder"></i>
 						</a>
@@ -113,7 +119,7 @@
 					<!-- IF config.loggedIn -->
 				<button type="button" class="navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li class="nav-title">
-						<a href="#" id="new_topic">发帖</a>
+						<a href="#" id="new_topic" style="font-weight: 500; font-size: 15px; color: #a9a9a9;">发帖</a>
 					</li>
 				</button>
 					<!-- ENDIF config.loggedIn -->
