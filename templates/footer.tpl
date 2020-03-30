@@ -105,34 +105,57 @@
 	<!-- IMPORT 500-embed.tpl -->
 	</div>
 
-	<div id="newTopic" style="display: none;">
-		<img id="new_topic" href="#" class="fa topic-position-fix" style="width: 43px; height: 43px"
-			 src="https://images.squarespace-cdn.com/content/v1/5b05c8c74eddec9f709ec844/1559637223777-LD0PVL14ERJ14KG6634B/ke17ZwdGBToddI8pDm48kGfiFqkITS6axXxhYYUCnlRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxQ1ibo-zdhORxWnJtmNCajDe36aQmu-4Z4SFOss0oowgxUaachD66r8Ra2gwuBSqM/paper-pencil_icon-icons.com_52928.png" alt="">
+	<div id="newTopic" style="display: none; position: fixed; right: 3rem; bottom: 10rem">
+		<a class="floating-a">
+			<i id="new_topic" href="#" class="fa fa-upload topic-position-fix"></i>
+		</a>
 	</div>
-	<div><i id="scroll" style="display: none;" class="fa fa-chevron-circle-up position-fix"></i></div>
+	<div id="scroll" style="display: none; position: fixed; right: 3rem; bottom: 4rem">
+		<a class="floating-a">
+			<i class="fa fa-angle-up position-fix"></i>
+		</a>
+	</div>
 
 	<style type="text/css">
 		.topic-position-fix {
-			position: fixed;
-			bottom: 70px;
-			right: 20px;
-			font-size: 50px;
-			color: #F8BD2C;
-			opacity: 70%;
+			color: #c2cfd7;
+			position: relative;
+			top: 2px;
+			display: inline-block;
+			font-style: normal;
+			line-height: 1;
 		}
 		.position-fix {
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			font-size: 50px;
-			color: grey;
-			opacity: 70%;
+			font-size: 4rem;
+			font-weight: bolder;
+			color: #c2cfd7;
+			position: relative;
+			top: 2px;
+			display: inline-block;
+			font-style: normal;
+			line-height: 1;
+		}
+		.floating-a {
+			font-size: 3rem;
+			display: block;
+			width: 5rem;
+			height: 5rem;
+			text-align: center;
+			line-height: 4rem;
+			-webkit-box-shadow: rgba(15,37,64,0.1) 0 5px 15px 0;
+			box-shadow: rgba(15,37,64,0.1) 0 5px 15px 0;
+			cursor: pointer;border-radius: 50%;
+			background: #fff;
+			opacity: 80%;
+			transition: bottom 0.3s ease 0s;
 		}
 		.position-fix:hover {
 			cursor: pointer;
+			color: #F8BD2C;
 		}
 		.topic-position-fix:hover {
 			cursor: pointer;
+			color: #F8BD2C;
 		}
 		@media only screen and (max-width: 576px) {
 			.footer {

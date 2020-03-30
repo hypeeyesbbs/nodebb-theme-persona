@@ -119,7 +119,7 @@
 					<!-- IF config.loggedIn -->
 				<button type="button" class="new-topic-button navbar-title-toggle show pull-left" style="background-color: transparent;">
 					<li class="nav-title">
-						<a href="#" id="new_topic" style="font-weight: 500; font-size: 15px; color: #a9a9a9;">发帖</a>
+						<a href="#" id="new_topic" style="font-weight: 500; font-size: 15px; color: #F8BD2C;">发帖</a>
 					</li>
 				</button>
 					<!-- ENDIF config.loggedIn -->
